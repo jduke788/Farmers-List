@@ -6,6 +6,13 @@ class Cart {
 
     addProduct(Product) {
         this.products.push(Product)
-        
+        total ++
+    }
+
+    removeProduct(index) {
+        this.products.pop(index)
+        total --
     }
 }
+
+module.exports = Cart
